@@ -1,0 +1,6 @@
+{
+    "name": "YouTube Video Rating",
+    "description": "Gauge the quality of the video with basic metrics available openly",
+    "version": "0.1",
+    "manifest_version": 3
+}
