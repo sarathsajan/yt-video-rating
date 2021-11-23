@@ -1,7 +1,7 @@
 {
     "name": "YouTube Video Rating",
     "description": "Gauge the quality of the YouTube video with basic metrics available openly",
-    "version": "0.4",
+    "version": "0.5",
     "manifest_version": 3,
     "background": {
         "service_worker": "get_metrics.js"
