@@ -1,11 +1,31 @@
 {
     "manifest_version": 3,
     "name": "Sarath's YouTube Video Ratin-a-tor",
-    "version": "0.1",
+    "version": "0.2",
     "content_scripts": [
         {
-            "matches": ["https://www.youtube.com/*"],
-            "js": ["content.js"]
+            "matches": [
+                "<all_urls>",
+                "https://www.youtube.com/*"
+            ],
+            "js": [
+                "content.js"
+            ]
         }
-    ]
+    ],
+    "permissions": [
+        "tabs",
+        "activeTab"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_icon": {
+            "16": "/images/get_started16.png",
+            "32": "/images/get_started32.png",
+            "48": "/images/get_started48.png",
+            "128": "/images/get_started128.png"
+        }
+    }
 }
